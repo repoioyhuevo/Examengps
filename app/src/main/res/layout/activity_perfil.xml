@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagebkg"
+    tools:context=".PerfilActivity">
+
+    <EditText
+        android:id="@+id/editTextNombrePerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:hint="Nombre"/>
+
+    <EditText
+        android:id="@+id/editTextApellidoPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:layout_below="@id/editTextNombrePerfil"
+        android:hint="Apellido"/>
+
+
+    <EditText
+        android:id="@+id/editTextApodoPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:layout_below="@id/editTextApellidoPerfil"
+        android:layout_marginTop="16dp"
+        android:hint="Usuario" />
+
+    <Button
+        android:id="@+id/btnGuardarPerfil"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextApodoPerfil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="143dp"
+        android:text="Guardar" />
+
+    <ImageView
+        android:id="@+id/imageViewFotoPerfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btnGuardarPerfil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/lavender_border"
+        android:layout_marginEnd="137dp" />
+
+    <Button
+        android:id="@+id/btnSeleccionarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewFotoPerfil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="140dp"
+        android:text="Seleccionar Foto" />
+
+    <Button
+        android:id="@+id/btnMostrarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSeleccionarFoto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="140dp"
+        android:text="Mostrar Datos" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".HistorialRutasActivity">
+
+    <TextView
+        android:id="@+id/textViewHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial de Rutas:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewDireccionInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHistorial"
+        android:layout_marginTop="16dp"
+        android:text="Inicio: "
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewDireccionFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDireccionInicio"
+        android:layout_marginTop="8dp"
+        android:text="Fin: "
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDireccionFin"
+        android:layout_marginTop="8dp"
+        android:text="Distancia: "
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewDuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDistancia"
+        android:layout_marginTop="8dp"
+        android:text="Duración: "
+        android:textSize="16sp"/>
+
+    <!-- Agrega más TextViews según sea necesario -->
+    <TextView
+        android:id="@+id/textViewHoraInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDuracion"
+        android:layout_marginTop="8dp"
+        android:text="Hora de inicio: "
+        android:textSize="16sp"/>
+
+</RelativeLayout>

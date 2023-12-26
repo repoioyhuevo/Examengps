@@ -1,0 +1,85 @@
+<!-- activity_mostrar_datos.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebkg"
+    tools:context=".MostrarDatosActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFotoPerfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/imgperfil" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="20dp"
+        android:layout_below="@id/imageViewFotoPerfil"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Nombre: " />
+
+    <TextView
+        android:id="@+id/textViewApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:layout_below="@id/textViewNombre"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Apellido: " />
+
+    <TextView
+        android:id="@+id/textViewUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="20dp"
+        android:layout_below="@id/textViewApellido"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Usuario: " />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/grey"
+        android:layout_below="@id/textViewUsuario"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Email: " />
+
+    <Button
+        android:id="@+id/btnIrAPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="154dp"
+        android:text="Ir a Perfil" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIrAPerfil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="140dp"
+        android:text="Cerrar Sesión" />
+
+</RelativeLayout>
